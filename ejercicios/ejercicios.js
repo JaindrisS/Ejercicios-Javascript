@@ -48,3 +48,19 @@ function hero(bullets, dragons) {
 }
 
 console.log(hero(3, 2));
+
+// Square(n) Sum
+// Complete the sum of squares function so that it squares each number passed to it and then sums the results.
+// for example, for [1, 2, 2]it should return 9 because 1^2 + 2^2 + 2^2 + 2^2 = 9.
+
+function squareSum(numbers = []) {
+  let resulfinal = 0;
+  let result = [];
+  for (let i = 0; i < numbers.length; i++) {
+    result.push(numbers[i] * i);
+  }
+
+  return result.reduce((acc, value) => acc + value, resulfinal);
+}
+
+console.log(squareSum([1, 2, 2]));
