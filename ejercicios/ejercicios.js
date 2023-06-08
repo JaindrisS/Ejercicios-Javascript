@@ -1,3 +1,5 @@
+const { equal } = require("assert");
+
 // create a function which returns an RNA sequence from the given DNA sequence
 function DNAtoRNA(dna = "") {
   if (dna.includes("T")) {
@@ -63,7 +65,7 @@ function squareSum(numbers = []) {
   return result.reduce((acc, value) => acc + value, resulfinal);
 }
 
-console.log(squareSum([1, 2, 2]));
+console.log(squareSum([0, 3, 4, 5]));
 
 // We need a function that can transform a number (integer) into a string.
 // What ways of achieving this do you know?
@@ -126,3 +128,17 @@ function likes(names) {
   }
 }
 console.log(likes(names4));
+
+// Build a function that returns an array of integers from n to 1 where n>0.
+// Example : n=5 --> [5,4,3,2,1]
+function reverseSeq(n) {
+  let result = [];
+
+  for (i = n; i > 0; i--) {
+    result.push(i);
+  }
+
+  return result;
+}
+
+console.log(reverseSeq(5));
